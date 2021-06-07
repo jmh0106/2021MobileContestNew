@@ -4,57 +4,52 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
+public class Joystick : MonoBehaviour
 {
-    private Image imageBackground;
-    private Image imageController;
-    private Vector2 touchPosition;
+    [SerializeField]
+    private GameObject imageBackground;
+    [SerializeField]
+    private GameObject imageController;
+    private Vector3 stickFristPosition;
+    public Vector3 joyVec;
+    float StickRadius;
 
     public void Awake()
     {
-        imageBackground = GetComponent<Image>();
-        imageController = transform.GetChild(0).GetComponent<Image>();
+        imageBackground.SetActive(false);
+        StickRadius = imageBackground.gameObject.GetComponent<RectTransform>().sizeDelta.y / 6;
+        Debug.Log(StickRadius);
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void PointerDown()
     {
-        Debug.Log("Touch Begin : " + eventData);
+        imageBackground.SetActive(true);
+        imageBackground.transform.position = Input.mousePosition;
+        imageController.transform.position = Input.mousePosition;
+        stickFristPosition = Input.mousePosition;
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void Drag(BaseEventData baseEventData)
     {
-        touchPosition = Vector2.zero;
+        PointerEventData pointerEventData = baseEventData as PointerEventData;
+        Vector3 DragPosition = pointerEventData.position;
+        joyVec = (DragPosition - stickFristPosition).normalized;
 
-        if(RectTransformUtility.ScreenPointToLocalPointInRectangle(imageBackground.rectTransform, eventData.position, eventData.pressEventCamera, out touchPosition))
+        float stickDistance = Vector3.Distance(DragPosition, stickFristPosition);
+
+        if (stickDistance < StickRadius)
         {
-            touchPosition.x = (touchPosition.x / imageBackground.rectTransform.sizeDelta.x);
-            touchPosition.y = (touchPosition.y / imageBackground.rectTransform.sizeDelta.y);
-
-            touchPosition = new Vector2(touchPosition.x * 2 - 1, touchPosition.y * 2 - 1);
-            touchPosition = (touchPosition.magnitude > 1) ? touchPosition.normalized : touchPosition;
-
-            imageController.rectTransform.anchoredPosition = new Vector2(
-                touchPosition.x * imageBackground.rectTransform.sizeDelta.x / 2,
-                touchPosition.y * imageBackground.rectTransform.sizeDelta.y / 2);
+            imageController.transform.position = stickFristPosition + joyVec * stickDistance;
         }
-
-        
+        else
+        {
+            imageController.transform.position = stickFristPosition + joyVec * StickRadius;
+        }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void Drop()
     {
-        imageController.rectTransform.anchoredPosition = Vector2.zero;
-
-        touchPosition = Vector2.zero;
-    }
-
-    public float Horizontal()
-    {
-        return touchPosition.x;
-    }
-
-    public float Vertical()
-    {
-        return touchPosition.y;
+        joyVec = Vector3.zero;
+        imageBackground.SetActive(false);
     }
 }

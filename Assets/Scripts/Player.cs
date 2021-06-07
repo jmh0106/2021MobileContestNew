@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        float x = joystick.Horizontal();
-        float y = joystick.Vertical();
+        float x = joystick.joyVec.x;
+        float y = joystick.joyVec.y;
 
         if (x != 0 || y != 0)
         {
