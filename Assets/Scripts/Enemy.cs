@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private float speed;
     private int health;
     public Sprite[] sprites;
+    public GameObject DestroyEffect;
     private Transform playerPos;
     SpriteRenderer SpriteRenderer;
     Rigidbody2D rigid;
@@ -45,7 +46,10 @@ public class Enemy : MonoBehaviour
         Invoke("ReturnSprite", 0.1f);
 
         if (health == 0)
+        {
+            Instantiate(DestroyEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
     }
 
     void ReturnSprite()
