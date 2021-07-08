@@ -8,18 +8,19 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private Joystick joystick;
-    private float moveSpeed = 10;
-    float bulletCoolTime = 0.5f;
+    private float moveSpeed = 6;
+    float bulletCoolTime = 0.2f;
     private Vector3 lastDirection = Vector3.up;
+    private Ending ending;
 
+    public GameObject DestroyEffect;
     public GameObject bullet;
 
     float timer = 0;
-    
 
-    private void Start()
+    private void Awake()
     {
-        
+        ending = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Ending>();
     }
 
     void Update()
@@ -55,6 +56,11 @@ public class Player : MonoBehaviour
         Vector3 worldPos = Camera.main.ViewportToWorldPoint(viewPos);
         transform.position = worldPos;
 
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        transform.position += new Vector3(h, v, 0) * moveSpeed * Time.deltaTime;
+
     }
 
 
@@ -65,9 +71,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if ((collision.gameObject.tag == "Enemy" && !collision.gameObject.GetComponent<Enemy>().isFreezing) || collision.gameObject.tag == "Boss")
         {
-            SceneManager.LoadScene("EndingScene");
+            ending.EndGame(false);
+            Instantiate(DestroyEffect, transform.position, Quaternion.identity);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -13,16 +13,11 @@ public class Joystick : MonoBehaviour
     private Vector3 stickFristPosition;
     public Vector3 joyVec;
     float StickRadius;
-
-    public void Awake()
-    {
-        imageBackground.SetActive(false);
-        StickRadius = imageBackground.gameObject.GetComponent<RectTransform>().sizeDelta.y / 6;
-        Debug.Log(StickRadius);
-    }
+    public SettingManager settingManager;
 
     public void PointerDown()
     {
+        StickRadius = imageBackground.gameObject.GetComponent<RectTransform>().sizeDelta.y / (10 * joySen.joystickSen);
         imageBackground.SetActive(true);
         imageBackground.transform.position = Input.mousePosition;
         imageController.transform.position = Input.mousePosition;

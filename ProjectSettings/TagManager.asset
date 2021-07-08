@@ -6,6 +6,15 @@ TagManager:
   tags:
   - PlayerBullet
   - Enemy
+  - FreezingArea
+  - Bubble
+  - Bomb
+  - GameManager
+  - Score
+  - EndingScore
+  - TimeSlow
+  - Boss
+  - SoundManager
   layers:
   - Default
   - TransparentFX
