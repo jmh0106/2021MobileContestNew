@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ReverseSkill : MonoBehaviour
 {
-    public GameObject player;
+    GameObject player;
     private float timer = 0;
     private float BossSkillCool = 6;
     public Sprite[] bossEyeSprites;
     private int spriteN=1;
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

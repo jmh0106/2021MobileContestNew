@@ -5,13 +5,20 @@ using UnityEngine;
 public class GameMangaer : MonoBehaviour
 {
     public GameObject enemy;
+    public GameObject player;
     private float enemySpawnDelay = 1;
     private float curEnemySpawnDelay = 1;
     private float enemyTimer = 0;
     private float spawnRadius = 11;
+   
     
 
     private Vector3 spawnPos;
+
+    private void Start()
+    {
+        Instantiate(player, new Vector3(0, 0, 10), transform.rotation);
+    }
 
     private void Update()
     {

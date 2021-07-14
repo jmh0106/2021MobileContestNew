@@ -8,12 +8,14 @@ public class Stage1GameManager : MonoBehaviour
     public int bossHealth;
     public float bossScale;
     public GameObject stage1Boss;
+    public GameObject player;
     public float bossBulletScale = 1;
 
     private void Awake()
     {
         bossHealth = 10;
         bossScale = 3;
+        Instantiate(player, new Vector3(0, -3, 10), transform.rotation);
     }
 
 
