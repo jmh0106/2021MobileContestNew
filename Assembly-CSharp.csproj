@@ -57,7 +57,6 @@
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\LogoCinematic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
-    <Compile Include="Assets\Scripts\SettingManager.cs" />
     <Compile Include="Assets\Scripts\Manager\SettingManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
@@ -75,14 +74,12 @@
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
-    <Compile Include="Assets\Scripts\DDOL.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\ReverseSkill.cs" />
+    <Compile Include="Assets\Scripts\DDOL.cs" />
     <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\Scripts\Stage1GameManager.cs" />
-    <Compile Include="Assets\Scripts\joySen.cs" />
     <Compile Include="Assets\Scripts\Items\BombItem.cs" />
     <Compile Include="Assets\Scripts\Enemy\Stage1Boss.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />

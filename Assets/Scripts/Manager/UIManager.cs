@@ -96,6 +96,8 @@ public class UIManager : MonoBehaviour
         GameUI[7].LeanMoveLocalY(-150, .001f);
         GameUI[8].LeanMoveLocalY(-150, .001f);
         GameUI[9].LeanMoveLocalY(-150, .001f);
+        GameUI[1].transform.position = new Vector3(10000, 0, 0);
+        GameUI[1].SetActive(true);
 
         SceneManager.LoadScene("StageSelectScene");
     }
@@ -122,7 +124,7 @@ public class UIManager : MonoBehaviour
     // 상점 패널 열기
     public void ShopPanel()
     {
-        
+        SceneManager.LoadScene("TutorialScene");
     }
 
     public void SetCoinShopPanelUp(bool _apple)
@@ -160,7 +162,7 @@ public class UIManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         playableDirector.Stop();
-        SceneManager.LoadScene("Stage1Scene");
+        SceneManager.LoadScene("StageSelectScene");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -186,8 +188,13 @@ public class UIManager : MonoBehaviour
             GameCategoryUI[2].SetActive(true);
     }
 
-    public void BossHuntSceneChange(string StageType, string StageNum)
+    public void BossSceneChange(string StageNum)
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Boss" + StageNum);
+    }
+
+    public void HuntSceneChange(string StageNum)
+    {
+        SceneManager.LoadScene("HuntingScene" + StageNum);
     }
 }
