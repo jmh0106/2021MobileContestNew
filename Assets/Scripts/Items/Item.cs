@@ -93,7 +93,6 @@ public class Item : MonoBehaviour
             else //bomb
             {
                 Instantiate(bomb, new Vector2(Random.Range(-8, 8), Random.Range(-4, 4)), transform.rotation);
-                Debug.Log("bomb");
                 soundManager.PlaySalvationItem();
                 Destroy(this.gameObject);
             }

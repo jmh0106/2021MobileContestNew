@@ -69,7 +69,6 @@
     <Compile Include="Assets\Scripts\Enemy\BossTurn.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanAudio.cs" />
-    <Compile Include="Assets\Scripts\Stage1Score.cs" />
     <Compile Include="Assets\Scripts\Enemy\EyeBossSkill.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />

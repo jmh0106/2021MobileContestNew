@@ -4,44 +4,23 @@ using UnityEngine;
 
 public class BombItem : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
+    Sprite BombSprite;
+    UIManager _UIManager;
+    int Bombtime;
 
     private void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        StartCoroutine("FadeIn");
-        Color c = spriteRenderer.material.color;
-        c.a = 0;
+        _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        StartCoroutine("Bomb");
     }
 
-    IEnumerator FadeOut()
+    IEnumerator Bomb()
     {
+        LeanTween.value(gameObject, new Color(1, 1, 1, 0), new Color(1, 1, 1, 1), 1f);
 
-        for (int i = 10; i >= 0; i--)
-        {
-            float f = i / 10.0f;
-            Color c = spriteRenderer.material.color;
-            c.a = f;
-            spriteRenderer.material.color = c;
-            yield return new WaitForSeconds(0.1f);
-        }
-        Destroy(gameObject);
+        yield return new WaitForSeconds(3 + _UIManager.CoinShopLevel[0] * .3f);
+
+        LeanTween.value(gameObject, new Color(1, 1, 1, 1), new Color(1, 1, 1, 0), 1f);
+        Destroy(gameObject, 1f);
     }
-
-
-    IEnumerator FadeIn()
-    {
-        for(int i = 0; i < 10; i++)
-        {
-            float f = i / 10.0f;
-            Color c = spriteRenderer.material.color;
-            c.a = f;
-            spriteRenderer.material.color = c;
-            yield return new WaitForSeconds(0.1f);
-        }
-        gameObject.tag = "Bomb";
-
-        StartCoroutine("FadeOut");
-    }
-
 }

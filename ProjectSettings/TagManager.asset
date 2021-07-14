@@ -24,6 +24,7 @@ TagManager:
   - TutorialMonster
   - TutorialEnemy
   - Step5
+  - UIManager
   layers:
   - Default
   - TransparentFX

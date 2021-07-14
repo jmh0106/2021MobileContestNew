@@ -15,7 +15,6 @@ public class Stage1Boss : MonoBehaviour
     GameObject child;
     private Transform playerPos;
     private int currentPhase;
-    public Stage1Score ScoreManager;
     public Stage1GameManager gameManager;
     SpriteRenderer spriteRenderer;
     public SoundManager soundManager;
@@ -26,8 +25,7 @@ public class Stage1Boss : MonoBehaviour
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
-
-        ScoreManager = GameObject.FindGameObjectWithTag("Score").GetComponent<Stage1Score>();
+        
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Stage1GameManager>();
 
         curX = Random.Range(0.8f, 1.1f) * (int)Mathf.Pow(-1, (int)Random.Range(0, 2));
@@ -108,8 +106,6 @@ public class Stage1Boss : MonoBehaviour
         if (health == 0)
         {
             gameMg.GetComponent<Stage1GameManager>().CreateBoss(currentPhase, transform);
-            ScoreManager.curScore += 300;
-            ScoreManager.bossKillNum += 1;
             Destroy(gameObject);
         }
     }

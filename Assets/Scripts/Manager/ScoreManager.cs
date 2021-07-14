@@ -30,6 +30,5 @@ public class ScoreManager : MonoBehaviour
         }
 
         score.text = curScore.ToString();
-
     }
 }
