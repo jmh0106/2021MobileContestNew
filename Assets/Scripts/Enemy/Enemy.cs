@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class Enemy : MonoBehaviour
     private float freezingTimer = 0;
     public SoundManager soundManager;
     public GameObject[] DestroyEffect;
-    
+    private int maxEnemyNum;
+
     private void Awake()
     {
         if (GameObject.FindGameObjectWithTag("Score") == null)
@@ -36,7 +38,14 @@ public class Enemy : MonoBehaviour
         ScoreManager = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreManager>();
         rigid = GetComponent<Rigidbody2D>();
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
-        int enemyNum = Random.Range(0, 7);
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "HuntingScene1")
+            maxEnemyNum = 3;
+        else if (currentScene == "HuntingScene2")
+            maxEnemyNum = 5;
+        else
+            maxEnemyNum = 7;
+        int enemyNum = Random.Range(0, maxEnemyNum);
         if (enemyNum < 3)
         {
             speed = 1.5f;

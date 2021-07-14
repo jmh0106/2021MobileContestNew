@@ -15,7 +15,6 @@ public class Stage1Boss : MonoBehaviour
     GameObject child;
     private Transform playerPos;
     private int currentPhase;
-    private int curScore = 0;
     public Stage1Score ScoreManager;
     public Stage1GameManager gameManager;
     SpriteRenderer spriteRenderer;

@@ -15,6 +15,15 @@ TagManager:
   - TimeSlow
   - Boss
   - SoundManager
+  - Black
+  - BossEye
+  - Step1
+  - Step2
+  - Step3
+  - Step4
+  - TutorialMonster
+  - TutorialEnemy
+  - Step5
   layers:
   - Default
   - TransparentFX

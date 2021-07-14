@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public GameObject bullet;
 
     float timer = 0;
+    public int direction = 1;
 
     private void Start()
     {
@@ -43,10 +44,11 @@ public class Player : MonoBehaviour
 
         if (x != 0 || y != 0)
         {
-            transform.position += new Vector3(x, y, 0) * moveSpeed * Time.deltaTime;
+            transform.position += new Vector3(x*direction, y*direction, 0) * moveSpeed * Time.deltaTime;
             //È¸Àü
             float z = Mathf.Atan2(y,x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, z-90);
+
         }
 
 
@@ -78,5 +80,10 @@ public class Player : MonoBehaviour
             Instantiate(DestroyEffect, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }
+    }
+    
+    public void ReverseDirection()
+    {
+        direction *= -1;
     }
 }

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9F469617-49ED-4502-1B69-74AF6EE10557}</ProjectGuid>
+    <ProjectGuid>{EBFE6462-0535-05BA-21F6-C360FFE2C888}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,13 +53,15 @@
     <UnityVersion>2020.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\LogoCinematic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
     <Compile Include="Assets\Scripts\SettingManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\SettingManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Stage2BossSkill.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingPunch.cs" />
@@ -69,14 +71,18 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\Scripts\Stage1Score.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EyeBossSkill.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
     <Compile Include="Assets\Scripts\DDOL.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ReverseSkill.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\Scripts\Stage1GameManager.cs" />
+    <Compile Include="Assets\Scripts\joySen.cs" />
     <Compile Include="Assets\Scripts\Items\BombItem.cs" />
     <Compile Include="Assets\Scripts\Enemy\Stage1Boss.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
@@ -89,6 +95,7 @@
     <Compile Include="Assets\Scripts\Tutorial\TutorialEnemy.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossSkillAlarm.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\Scripts\Tutorial\TutorialManager.cs" />
@@ -99,10 +106,12 @@
     <Compile Include="Assets\Scripts\Items\BubbleItem.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier2d.cs" />
-    <Compile Include="Assets\Scripts\GameMangaer.cs" />
+    <Compile Include="Assets\Scripts\Manager\GameMangaer.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossSkillDestroy.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Items\TimeSlowitem.cs" />
-    <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EyeBoss.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
