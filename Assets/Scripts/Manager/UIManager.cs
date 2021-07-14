@@ -112,7 +112,7 @@ public class UIManager : MonoBehaviour
     // 튜토리얼 시작
     public void TutorialGame()
     {
-
+        SceneManager.LoadScene("TutorialScene");
     }
 
     // 세팅 패널 열기

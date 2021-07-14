@@ -34,12 +34,11 @@ public class Stage1Boss : MonoBehaviour
         curY = curX * (int)Mathf.Pow(-1, (int)Random.Range(0, 2));
 
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
-        gameMg = GameObject.FindGameObjectWithTag("GameManager");
 
-        health = gameMg.GetComponent<Stage1GameManager>().GetHealth();
-        float scale = gameMg.GetComponent<Stage1GameManager>().GetScale();
+        health = gameManager.GetHealth();
+        float scale = gameManager.GetScale();
         transform.localScale = new Vector3(scale, scale, 1);
-        currentPhase = gameMg.GetComponent<Stage1GameManager>().GetPhase();
+        currentPhase = gameManager.GetPhase();
         Debug.Log("currentPhase:" + currentPhase);
 
         child = transform.GetChild(0).gameObject;
@@ -107,7 +106,7 @@ public class Stage1Boss : MonoBehaviour
         StartCoroutine("ToRed");
         if (health == 0)
         {
-            gameMg.GetComponent<Stage1GameManager>().CreateBoss(currentPhase, transform);
+            gameManager.CreateBoss(currentPhase, transform);
             ScoreManager.curScore += 300;
             ScoreManager.bossKillNum += 1;
             Destroy(gameObject);

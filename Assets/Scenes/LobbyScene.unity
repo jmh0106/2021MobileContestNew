@@ -1655,13 +1655,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 232736663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d8a46078b9e4742a8e6936fef4b2b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e2d0e9eb5585bd4aadda4d96213f85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 232736666}
-  curScore: 5000
-  bossKillNum: 0
-  ending: {fileID: 0}
+  score: {fileID: 0}
+  curScore: 0
 --- !u!114 &232736666
 MonoBehaviour:
   m_ObjectHideFlags: 0

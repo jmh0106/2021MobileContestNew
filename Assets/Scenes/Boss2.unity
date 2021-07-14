@@ -462,9 +462,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1236992575}
   - component: {fileID: 1236992576}
+  - component: {fileID: 1236992577}
   m_Layer: 0
   m_Name: BossSkillManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,6 +499,23 @@ MonoBehaviour:
   bossSkill: {fileID: 8389915946947092588, guid: ae329c3279a6d834193c0832fb0a2015, type: 3}
   bossSkillAlarm: {fileID: 4387224774420144906, guid: ed4a2bcf62548a049bec3f9d840fd8b2, type: 3}
   bossEyeSprite: {fileID: 21300000, guid: 1f70243a95192af41a1d145de4c8fee2, type: 3}
+--- !u!114 &1236992577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236992574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d8f6471ad3ba949a813a0445bfb88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossPhase: 1
+  bossHealth: 0
+  bossScale: 0
+  stage1Boss: {fileID: 0}
+  bossBulletScale: 1
 --- !u!1001 &7855693337577805868
 PrefabInstance:
   m_ObjectHideFlags: 0
