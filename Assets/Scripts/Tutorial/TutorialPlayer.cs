@@ -23,9 +23,11 @@ public class TutorialPlayer : MonoBehaviour
     public bool isMoveOn = false;
     public bool isDie = false;
     bool isStep2 = true;
-    private void Awake()
+
+    private void Start()
     {
-        //ending = tutorialManager.GetComponent<Ending>();
+        joystick = GameObject.FindGameObjectWithTag("JoyStick").GetComponent<Joystick>();
+        _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
     }
 
     void Update()
@@ -44,10 +46,10 @@ public class TutorialPlayer : MonoBehaviour
             }
         }
     }
+
     private void PlayerMoved()
     {
-        
-            tutorialManager.GetComponent<TutorialManager>().OnStep3();
+        tutorialManager.GetComponent<TutorialManager>().OnStep3();
     }
 
     private void Move()
@@ -96,9 +98,9 @@ public class TutorialPlayer : MonoBehaviour
         {
             Debug.Log("tutorialFinish");
             tutorialManager.GetComponent<TutorialManager>().OnStep5();
-            //ending.EndGame(false);
             Instantiate(DestroyEffect, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
+            _UIManager.EndingStart(true);
         }
     }
 

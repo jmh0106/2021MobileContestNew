@@ -27,10 +27,6 @@ public class TutorialManager : MonoBehaviour
         enemy.SetActive(false);
     }
 
-    void Update()
-    {
-    }
-
     public void Step1OnClick()
     {
         Destroy(GameObject.FindGameObjectWithTag("Step1"));
@@ -59,5 +55,4 @@ public class TutorialManager : MonoBehaviour
         Destroy(step4);
         step5.SetActive(true);
     }
-
 }

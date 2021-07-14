@@ -307,6 +307,7 @@ public class UIManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name.Contains("Hunt"))
             Coin += FinalScore;
+        PlayerPrefs.SetInt("Player_Coin", Coin);
 
         GameUI[3].SetActive(false);
 

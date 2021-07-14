@@ -25,14 +25,13 @@ public class TutorialEnemy : MonoBehaviour
     public bool isMove = false;
     public GameObject tutorialManager;
 
-    private void Awake()
+    private void Start()
     {
         if (GameObject.FindGameObjectWithTag("Score") == null)
         {
             Destroy(gameObject);
             return;
         }
-
 
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -41,9 +40,7 @@ public class TutorialEnemy : MonoBehaviour
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
         string currentScene = SceneManager.GetActiveScene().name;
 
-       
         MonsterAdditionScore = 30;
-
     }
 
     private void Update()

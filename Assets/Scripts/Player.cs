@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (joystick == null)
+            GameObject.Find("JoystickBG").GetComponent<Joystick>();
+
         Move();
         timer += Time.deltaTime;
         

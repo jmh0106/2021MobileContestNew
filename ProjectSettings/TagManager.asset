@@ -25,6 +25,7 @@ TagManager:
   - TutorialEnemy
   - Step5
   - UIManager
+  - JoyStick
   layers:
   - Default
   - TransparentFX
