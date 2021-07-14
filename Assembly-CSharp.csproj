@@ -115,6 +115,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\Following.cs" />
+    <Compile Include="Assets\Scripts\PlayerShield.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity Package\TextMesh Pro\Shaders\TMPro.cginc" />

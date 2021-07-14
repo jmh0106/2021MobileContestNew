@@ -12,6 +12,11 @@ public class Player : MonoBehaviour
     float bulletCoolTime = 0.2f;
     private Vector3 lastDirection = Vector3.up;
     private UIManager _UIManager;
+    public GameObject shield;
+
+    bool playerTripleBullet = false;
+    bool playerShield = false;
+    bool playerPet = false;
 
     public GameObject DestroyEffect;
     public GameObject bullet;
@@ -23,6 +28,18 @@ public class Player : MonoBehaviour
     {
         _UIManager = GameObject.Find("MainCanvas").GetComponent<UIManager>();
         joystick = GameObject.Find("JoystickBG").GetComponent<Joystick>();
+
+        if (_UIManager.PassiveShopLock[0] == false)
+            playerTripleBullet = true;
+
+        if (_UIManager.PassiveShopLock[1] == false)
+        {
+            Instantiate(shield, Vector3.zero, Quaternion.identity).transform.parent = gameObject.transform;
+            playerShield = true;
+        }
+
+        if (_UIManager.PassiveShopLock[2] == false)
+            playerPet = true;
     }
 
     void Update()
@@ -32,7 +49,7 @@ public class Player : MonoBehaviour
 
         Move();
         timer += Time.deltaTime;
-        
+
         if (timer > bulletCoolTime)
         {
             Fire();
@@ -47,10 +64,10 @@ public class Player : MonoBehaviour
 
         if (x != 0 || y != 0)
         {
-            transform.position += new Vector3(x*direction, y*direction, 0) * moveSpeed * Time.deltaTime;
+            transform.position += new Vector3(x * direction, y * direction, 0) * moveSpeed * Time.deltaTime;
             //È¸Àü
-            float z = Mathf.Atan2(y,x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, z-90);
+            float z = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, z - 90);
 
         }
 
@@ -84,9 +101,24 @@ public class Player : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    
+
     public void ReverseDirection()
     {
         direction *= -1;
+    }
+
+    void Pet()
+    {
+
+    }
+
+    void Shield()
+    {
+
+    }
+
+    void TripleShot()
+    {
+
     }
 }
