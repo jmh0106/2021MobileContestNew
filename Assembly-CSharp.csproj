@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Manager\SettingManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Stage2BossSkill.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingPunch.cs" />
@@ -69,9 +70,11 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\Scripts\Stage1Score.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EyeBossSkill.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ReverseSkill.cs" />
     <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplines.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossSkillAlarm.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline2d.cs" />
@@ -97,9 +101,11 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier2d.cs" />
     <Compile Include="Assets\Scripts\Manager\GameMangaer.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossSkillDestroy.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Items\TimeSlowitem.cs" />
     <Compile Include="Assets\Scripts\Manager\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EyeBoss.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
@@ -107,12 +113,9 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EyeBoss.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EyeBossSkill.cs" />
-    <Compile Include="Assets\Scripts\Enemy\ReverseSkill.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Stage2BossSkill.cs" />
-    <Compile Include="Assets\Scripts\Enemy\BossSkillAlarm.cs" />
-    <Compile Include="Assets\Scripts\Enemy\BossSkillDestroy.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TutorialManager.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TutorialPlayer.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TutorialEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity Package\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LobbyScene.unity
     guid: d6923435768a1d44ab9c41a77fd88476
-  - enabled: 1
-    path: Assets/Scenes/HuntingScene3.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
     guid: 5e4484b29f3993c479c7527875625c18
@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss2.unity
     guid: 9739bee86c0961e45905520c8fb36c77
+  - enabled: 1
+    path: Assets/Scenes/HuntingScene1.unity
+    guid: 7fb9365b7e3a305418d08121c7f759bd
+  - enabled: 1
+    path: Assets/Scenes/HuntingScene2.unity
+    guid: d7c59d34b7c93d849ad681178dc234a7
+  - enabled: 1
+    path: Assets/Scenes/HuntingScene3.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 8653b9c37f9cc9748babdd886b601cf8
   m_configObjects: {}

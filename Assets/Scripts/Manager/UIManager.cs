@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour
 
     public void TutorialGame()
     {
-
+        SceneManager.LoadScene("TutorialScene");
     }
 
     void TimeStop()

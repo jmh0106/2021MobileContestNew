@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
             //È¸Àü
             float z = Mathf.Atan2(y,x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, z-90);
+
         }
 
 
