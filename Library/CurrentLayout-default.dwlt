@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< Updated upstream
   m_Title: Game
+=======
+  m_Title: Project
+>>>>>>> Stashed changes
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -45,7 +49,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< Updated upstream
     height: 997
+=======
+    height: 1037
+>>>>>>> Stashed changes
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -74,8 +82,13 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
+<<<<<<< Updated upstream
   - {fileID: 17}
   m_MainToolbar: {fileID: 17}
+=======
+  - {fileID: 18}
+  m_MainToolbar: {fileID: 18}
+>>>>>>> Stashed changes
   m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
@@ -122,9 +135,17 @@ MonoBehaviour:
     x: 0
     y: 977
     width: 1920
+<<<<<<< Updated upstream
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+=======
+    height: 987
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22004, y: 10000}
+  vertical: 0
+  controlID: 121
+>>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +170,11 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 70
+=======
+  controlID: 100
+>>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,9 +333,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
       m_SelectedIDs: e6050000
       m_LastClickedID: 0
       m_ExpandedIDs: a2e3feffb8e3feffdaf5ffff00f6ffff2ef6ffff80f6ffffacf6ffffeef6ffff10f7ffff40f7ffff6cf7ffff82f7ffff94f7ffffa8f7ffff3ef9ffffeafaffff64440000f64d0000024e0000cc4e000032cb0000
+=======
+      m_SelectedIDs: ea420000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0afbffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -422,25 +453,35 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 7c460000
     m_LastClickedID: 18044
     m_ExpandedIDs: 000000006446000066460000684600006a460000904600008a5300003e55000000ca9a3b
+=======
+    m_SelectedIDs: e0420000
+    m_LastClickedID: 17120
+    m_ExpandedIDs: 00000000dc420000e042000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Material
+      m_OriginalName: Material
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 17132
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
+<<<<<<< Updated upstream
       m_ClientGUIView: {fileID: 8}
+=======
+      m_ClientGUIView: {fileID: 10}
+>>>>>>> Stashed changes
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -452,7 +493,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 000000006446000066460000684600006a460000
+=======
+    m_ExpandedIDs: 00000000dc420000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
