@@ -24,15 +24,17 @@ public class Enemy : MonoBehaviour
     public SoundManager soundManager;
     public GameObject[] DestroyEffect;
     private int maxEnemyNum;
+    public UIManager _UIManager;
 
     private void Awake()
     {
-        if (GameObject.FindGameObjectWithTag("Score") == null)
+        if (GameObject.FindGameObjectWithTag("Player") == null)
         {
             Destroy(gameObject);
             return;
         }
 
+        _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         ScoreManager = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreManager>();
@@ -155,7 +157,7 @@ public class Enemy : MonoBehaviour
         {
             curSpeed = 0;
             isFreezing = true;
-            freezingTimer = 5;
+            freezingTimer = 5 + _UIManager.CoinShopLevel[7] * 0.3f;
             spriteRenderer.sprite = sprites[spriteNum + 3];
         }
         if (collision.gameObject.tag == "Bubble")
@@ -174,7 +176,8 @@ public class Enemy : MonoBehaviour
 
     public void ToSlow(float t)
     {
-        curSpeed *= 0.35f;
+        float fow = _UIManager.CoinShopLevel[5] * 0.2f;
+        curSpeed *= 0.35f - fow;
         Invoke("ToOriginSpeed", 5f - t);
     }
 

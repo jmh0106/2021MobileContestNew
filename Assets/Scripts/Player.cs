@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private float moveSpeed = 6;
     float bulletCoolTime = 0.2f;
     private Vector3 lastDirection = Vector3.up;
-    private Ending ending;
+    private UIManager _UIManager;
 
     public GameObject DestroyEffect;
     public GameObject bullet;
@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        _UIManager = GameObject.Find("MainCanvas").GetComponent<UIManager>();
         joystick = GameObject.Find("JoystickBG").GetComponent<Joystick>();
-        ending = GameObject.Find("MainCanvas").GetComponent<Ending>();
     }
 
     void Update()
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
     {
         if ((collision.gameObject.tag == "Enemy" && !collision.gameObject.GetComponent<Enemy>().isFreezing) || collision.gameObject.tag == "Boss")
         {
-            ending.EndGame(false);
+            _UIManager.EndingStart(false);
             Instantiate(DestroyEffect, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }

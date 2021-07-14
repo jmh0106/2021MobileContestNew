@@ -23,7 +23,11 @@ public class SoundManager : MonoBehaviour
                 PlayLobbyBgm();
                 break;
 
-            case "Stage1Scene":
+            case "StageSelectScene":
+                PlayLobbyBgm();
+                break;
+
+            case "Boss":
                 PlayStage1Bgm();
                 break;
 

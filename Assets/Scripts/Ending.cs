@@ -15,7 +15,6 @@ public class Ending : MonoBehaviour
     public Sprite DieMointor;
 
     int FinalScore;
-    int CurScore = 0;
 
     public void EndGame(bool isClear)
     {
@@ -38,31 +37,23 @@ public class Ending : MonoBehaviour
 
         LeanTween.value(GameUI[3], new Color(0, 0, 0, 0), new Color(0, 0, 0, .4f), .1f);
         yield return new WaitForSeconds(.1f);
+
         if (!isClear)
             LeanTween.moveY(GameUI[2], 0, .2f);
+
         GameUI[1].GetComponent<SpriteRenderer>().sprite = (isClear) ? ClearMointor : DieMointor;
         LeanTween.value(GameUI[1], new Color(1, 1, 1, 0), new Color(1, 1, 1, 1), .1f);
 
-
         yield return new WaitForSeconds(.2f);
 
-
         soundManager.PlayScoreCount();
-        while (FinalScore > CurScore)
+
+        LeanTween.value(0, FinalScore, .2f).setOnUpdate((float val) =>
         {
+            EndingScoreResult.text = ((int)val).ToString();
+        });
 
-            if (FinalScore - CurScore > 10000)
-                CurScore += 1000;
-            if (FinalScore - CurScore > 1000)
-                CurScore += 100;
-            if (FinalScore - CurScore > 100)
-                CurScore += 10;
-            CurScore += 1;
-
-            EndingScoreResult.text = CurScore.ToString();
-
-            yield return null;
-        }
+        yield return new WaitForSeconds(.2f);
 
         GameUI[5].SetActive(true);
         GameUI[6].SetActive(true);
@@ -73,5 +64,16 @@ public class Ending : MonoBehaviour
     void TimeStop()
     {
         Time.timeScale = 0;
+    }
+
+    public void ResetEnding()
+    {
+        Time.timeScale = 1;
+        GameButtonUI.SetActive(true);
+
+        for (int i = 0; i < 5; i++)
+            GameUI[i].SetActive(false);
+
+        GameUI[4].SetActive(true);
     }
 }

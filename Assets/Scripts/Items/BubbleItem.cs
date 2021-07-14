@@ -14,7 +14,7 @@ public class BubbleItem : MonoBehaviour
     {
         _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         hitMax = _UIManager.CoinShopLevel[2] + 2;
-        float BubbleSize = 1.5f + _UIManager.CoinShopLevel[2] * .1f;
+        float BubbleSize = 1.5f + _UIManager.CoinShopLevel[3] * .1f;
         gameObject.transform.localScale = new Vector2(BubbleSize, BubbleSize);
 
         curX = (int)Mathf.Pow(-1, (int)Random.Range(1, 2));

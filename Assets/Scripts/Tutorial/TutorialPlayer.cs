@@ -11,7 +11,7 @@ public class TutorialPlayer : MonoBehaviour
     private float moveSpeed = 6;
     float bulletCoolTime = 0.2f;
     private Vector3 lastDirection = Vector3.up;
-    private Ending ending;
+    private UIManager _UIManager;
 
     public GameObject DestroyEffect;
     public GameObject bullet;
@@ -25,7 +25,7 @@ public class TutorialPlayer : MonoBehaviour
     bool isStep2 = true;
     private void Awake()
     {
-        ending = tutorialManager.GetComponent<Ending>();
+        //ending = tutorialManager.GetComponent<Ending>();
     }
 
     void Update()
@@ -96,7 +96,7 @@ public class TutorialPlayer : MonoBehaviour
         {
             Debug.Log("tutorialFinish");
             tutorialManager.GetComponent<TutorialManager>().OnStep5();
-            ending.EndGame(false);
+            //ending.EndGame(false);
             Instantiate(DestroyEffect, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }

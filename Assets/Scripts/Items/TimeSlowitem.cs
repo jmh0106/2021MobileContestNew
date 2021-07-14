@@ -6,6 +6,11 @@ public class TimeSlowitem : MonoBehaviour
 {
     public float time = 0;
 
+    private void Start()
+    {
+        time -= GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>().CoinShopLevel[4];
+    }
+
     private void Update()
     {
         time += Time.deltaTime;
