@@ -12,12 +12,13 @@ public class Joystick : MonoBehaviour
     private GameObject imageController;
     private Vector3 stickFristPosition;
     public Vector3 joyVec;
+    public float x, y;
     float StickRadius;
     public SettingManager settingManager;
 
     public void PointerDown()
     {
-        StickRadius = imageBackground.gameObject.GetComponent<RectTransform>().sizeDelta.y / (10 * joySen.joystickSen);
+        StickRadius = imageBackground.gameObject.GetComponent<RectTransform>().sizeDelta.y * .3f * settingManager.JoystickSen;
         imageBackground.SetActive(true);
         imageBackground.transform.position = Input.mousePosition;
         imageController.transform.position = Input.mousePosition;
@@ -28,6 +29,10 @@ public class Joystick : MonoBehaviour
     {
         PointerEventData pointerEventData = baseEventData as PointerEventData;
         Vector3 DragPosition = pointerEventData.position;
+
+        x = Mathf.Clamp(Mathf.Abs((DragPosition - stickFristPosition).x), 0, StickRadius) / StickRadius;
+        y = Mathf.Clamp(Mathf.Abs((DragPosition - stickFristPosition).y), 0, StickRadius) / StickRadius;
+
         joyVec = (DragPosition - stickFristPosition).normalized;
 
         float stickDistance = Vector3.Distance(DragPosition, stickFristPosition);

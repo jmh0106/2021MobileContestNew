@@ -7,22 +7,15 @@ public class Ending : MonoBehaviour
 {
     public TextMeshProUGUI textMeshProUGUI;
     public TextMeshProUGUI EndingScoreResult;
+    public SoundManager soundManager;
     public GameObject[] GameUI;
     public GameObject Joystick;
     public GameObject GameButtonUI;
     public Sprite ClearMointor;
     public Sprite DieMointor;
-    public SoundManager soundManager;
 
-    public int FinalScore;
-    public int CurScore = 0;
-
-    private void Start()
-    {
-        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
-        textMeshProUGUI = GameObject.FindGameObjectWithTag("Score").GetComponent<TextMeshProUGUI>();
-        EndingScoreResult = GameObject.FindGameObjectWithTag("EndingScore").GetComponent<TextMeshProUGUI>();
-    }
+    int FinalScore;
+    int CurScore = 0;
 
     public void EndGame(bool isClear)
     {
@@ -34,6 +27,7 @@ public class Ending : MonoBehaviour
         Time.timeScale = .1f;
         Joystick.SetActive(false);
         GameButtonUI.SetActive(false);
+        FinalScore = int.Parse(textMeshProUGUI.text);
 
         for (int i = 0; i < 5; i++)
         {
@@ -52,7 +46,6 @@ public class Ending : MonoBehaviour
 
         yield return new WaitForSeconds(.2f);
 
-        FinalScore = int.Parse(textMeshProUGUI.text);
 
         soundManager.PlayScoreCount();
         while (FinalScore > CurScore)

@@ -57,6 +57,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\LogoCinematic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+    <Compile Include="Assets\Scripts\SettingManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTweenExt.cs" />
@@ -71,6 +72,8 @@
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
+    <Compile Include="Assets\Scripts\DDOL.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\Scripts\Stage1GameManager.cs" />
@@ -104,9 +107,6 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\SettingManager.cs" />
-    <Compile Include="Assets\Scripts\joySen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity Package\TextMesh Pro\Shaders\TMPro.cginc" />

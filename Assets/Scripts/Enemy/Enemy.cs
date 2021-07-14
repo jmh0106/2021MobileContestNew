@@ -31,10 +31,6 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        GameObject tmp = GameObject.FindGameObjectWithTag("TimeSlow");
-        if (tmp != null)
-            ToSlow(tmp.GetComponent<TimeSlowitem>().time);
-
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         ScoreManager = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreManager>();
@@ -69,6 +65,10 @@ public class Enemy : MonoBehaviour
             transform.localScale = new Vector2(1.5f, 1.5f);
         }
         curSpeed = speed;
+
+        GameObject tmp = GameObject.FindGameObjectWithTag("TimeSlow");
+        if (tmp != null)
+            ToSlow(tmp.GetComponent<TimeSlowitem>().time);
     }
 
     private void Update()

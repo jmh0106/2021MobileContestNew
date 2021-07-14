@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip[] audioClip;
+    public SettingManager settingManager;
 
     public float BgmVolume = 1;
     public float SoundEffectVolume = 1;
@@ -14,7 +15,7 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         audioSource.loop = true;
-        audioSource.volume = joySen.BgmVol;
+        audioSource.volume = settingManager.BgmVol;
 
         switch (SceneManager.GetActiveScene().name)
         {

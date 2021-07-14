@@ -18,9 +18,10 @@ public class Player : MonoBehaviour
 
     float timer = 0;
 
-    private void Awake()
+    private void Start()
     {
-        ending = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Ending>();
+        joystick = GameObject.Find("JoystickBG").GetComponent<Joystick>();
+        ending = GameObject.Find("MainCanvas").GetComponent<Ending>();
     }
 
     void Update()
@@ -37,8 +38,8 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        float x = joystick.joyVec.x;
-        float y = joystick.joyVec.y;
+        float x = joystick.joyVec.x * joystick.x;
+        float y = joystick.joyVec.y * joystick.y;
 
         if (x != 0 || y != 0)
         {
