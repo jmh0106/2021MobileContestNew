@@ -176,7 +176,7 @@ public class Enemy : MonoBehaviour
 
     public void ToSlow(float t)
     {
-        float fow = _UIManager.CoinShopLevel[5] * 0.2f;
+        float fow = _UIManager.CoinShopLevel[5] * 0.06f;
         curSpeed *= 0.35f - fow;
         Invoke("ToOriginSpeed", 5f - t);
     }

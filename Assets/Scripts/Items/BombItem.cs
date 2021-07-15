@@ -11,6 +11,7 @@ public class BombItem : MonoBehaviour
     private void Start()
     {
         _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        gameObject.transform.localScale = new Vector3(5f - _UIManager.CoinShopLevel[1] * 0.6f, 5f - _UIManager.CoinShopLevel[1] * 0.6f, 1);
         StartCoroutine("Bomb");
     }
 

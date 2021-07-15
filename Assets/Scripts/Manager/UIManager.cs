@@ -123,7 +123,7 @@ public class UIManager : MonoBehaviour
         GameUI[9].LeanMoveLocalY(-150, .001f);
     }
 
-    // 게임 재시작
+    // 게임 재시작rot
     public void RestartGame()
     {
         Time.timeScale = 1;
@@ -234,7 +234,10 @@ public class UIManager : MonoBehaviour
         for (int i = 0; i < 8; i++)
         {
             CoinShopUI[i].sprite = CoinLevelUpSprite[CoinShopLevel[i]];
-            CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = ((CoinShopLevel[i] + 1) * 1000).ToString();
+            if (CoinShopLevel[i] != 5)
+                CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = ((CoinShopLevel[i] + 1) * 1000).ToString();
+            else
+                CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = "Max Level";
         }
     }
 
