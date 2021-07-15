@@ -26,6 +26,8 @@ TagManager:
   - Step5
   - UIManager
   - JoyStick
+  - RealBoss
+  - BossSprite
   layers:
   - Default
   - TransparentFX

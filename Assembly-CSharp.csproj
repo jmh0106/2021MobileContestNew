@@ -95,6 +95,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\Scripts\Tutorial\TutorialManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerShield.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSpline2d.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
@@ -115,7 +116,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\Scripts\PlayerShield.cs" />
+    <Compile Include="Assets\Scripts\PetBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity Package\TextMesh Pro\Shaders\TMPro.cginc" />

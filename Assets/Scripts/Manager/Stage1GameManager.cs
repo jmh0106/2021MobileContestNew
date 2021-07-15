@@ -16,6 +16,7 @@ public class Stage1GameManager : MonoBehaviour
         bossHealth = 10;
         bossScale = 3;
         Instantiate(player, new Vector3(0, -3, 10), transform.rotation);
+        
     }
 
 

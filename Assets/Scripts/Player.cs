@@ -10,9 +10,12 @@ public class Player : MonoBehaviour
     private Joystick joystick;
     private float moveSpeed = 6;
     float bulletCoolTime = 0.2f;
+    float petBulletTimer = 0;
+    float petBulletCoolTime = 1f;
     private Vector3 lastDirection = Vector3.up;
     private UIManager _UIManager;
     public GameObject shield;
+    public GameObject pet;
 
     bool playerTripleBullet = false;
     bool playerShield = false;
@@ -20,14 +23,18 @@ public class Player : MonoBehaviour
 
     public GameObject DestroyEffect;
     public GameObject bullet;
+    public GameObject petBullet;
 
     float timer = 0;
     public int direction = 1;
+
+    Vector3 petPos;
 
     private void Start()
     {
         _UIManager = GameObject.Find("MainCanvas").GetComponent<UIManager>();
         joystick = GameObject.Find("JoystickBG").GetComponent<Joystick>();
+        petPos = transform.GetChild(0).transform.position;
 
         if (_UIManager.PassiveShopLock[0] == false)
             playerTripleBullet = true;
@@ -39,7 +46,12 @@ public class Player : MonoBehaviour
         }
 
         if (_UIManager.PassiveShopLock[2] == false)
+        {
             playerPet = true;
+            GameObject petChild = Instantiate(pet, petPos, transform.rotation);
+            petChild.transform.parent = gameObject.transform;
+        }
+        
     }
 
     void Update()
@@ -49,7 +61,6 @@ public class Player : MonoBehaviour
 
         Move();
         timer += Time.deltaTime;
-
         if (timer > bulletCoolTime)
         {
             if (playerTripleBullet)
@@ -58,6 +69,16 @@ public class Player : MonoBehaviour
                 Fire();
             timer = 0;
         }
+
+        if (playerPet)
+        {
+            petBulletTimer += Time.deltaTime;
+            if (petBulletTimer > petBulletCoolTime)
+            {
+                PetBulletFire();
+                petBulletTimer = 0;
+            }
+        }    
     }
 
     private void Move()
@@ -93,6 +114,11 @@ public class Player : MonoBehaviour
     void Fire()
     {
         Instantiate(bullet, transform.position, transform.rotation);
+    }
+
+    void PetBulletFire()
+    {
+        Instantiate(petBullet, transform.GetChild(0).transform.position, transform.rotation);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
