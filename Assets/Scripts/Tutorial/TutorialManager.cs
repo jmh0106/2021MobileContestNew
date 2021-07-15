@@ -9,7 +9,6 @@ public class TutorialManager : MonoBehaviour
     GameObject step3;
     GameObject step4;
     GameObject step5;
-    GameObject step3_4;
     GameObject tutorialEnemy;
     GameObject enemy;
     void Start()
@@ -20,8 +19,6 @@ public class TutorialManager : MonoBehaviour
         step3.SetActive(false);
         step4 = GameObject.FindGameObjectWithTag("Step4");
         step4.SetActive(false);
-        step3_4 = GameObject.FindGameObjectWithTag("Step3_4");
-        step3_4.SetActive(false);
         step5 = GameObject.FindGameObjectWithTag("Step5");
         step5.SetActive(false);
         tutorialEnemy = GameObject.FindGameObjectWithTag("TutorialMonster");
@@ -41,10 +38,8 @@ public class TutorialManager : MonoBehaviour
     {
         Destroy(step2);
         step3.SetActive(true);
-        step3_4.SetActive(true);
         tutorialPlayer.GetComponent<TutorialPlayer>().isBulletOn = true;
         tutorialEnemy.SetActive(true);
-        
     }
     public void OnStep4()
     {
@@ -52,7 +47,6 @@ public class TutorialManager : MonoBehaviour
         tutorialPlayer.GetComponent<TutorialPlayer>().isBulletOn = false;
         tutorialPlayer.GetComponent<TutorialPlayer>().isDie = true;
         Destroy(step3);
-        Destroy(step3_4);
         step4.SetActive(true);
         enemy.SetActive(true);
     }
