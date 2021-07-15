@@ -12405,7 +12405,7 @@ MonoBehaviour:
   - {fileID: 1454645036}
   - {fileID: 841964502}
   - {fileID: 204214229}
-  PassiveShopLock: 000001
+  PassiveShopLock: 010101
   PassiveShopUnlockSprite:
   - {fileID: 21300000, guid: 82597f452dc1d8d49bebdbc7fea6ef57, type: 3}
   - {fileID: 21300000, guid: 1c2fe8746a77ddc4cb15cda6cca071bc, type: 3}
@@ -12420,6 +12420,7 @@ MonoBehaviour:
   MonitorSprite:
   - {fileID: 21300000, guid: 27a753e170f8ddd4d852685e315520ff, type: 3}
   - {fileID: 21300000, guid: 022e5b6a97e7dfa4eacd22be120e1e99, type: 3}
+  isBossClear: 000000
 --- !u!114 &2048980906
 MonoBehaviour:
   m_ObjectHideFlags: 0

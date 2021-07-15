@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Stage1GameManager : MonoBehaviour
 {
@@ -10,15 +11,20 @@ public class Stage1GameManager : MonoBehaviour
     public GameObject stage1Boss;
     public GameObject player;
     public float bossBulletScale = 1;
+    private int bossDieCheck = 0;
+    public UIManager _UIManager;
 
     private void Awake()
     {
         bossHealth = 10;
         bossScale = 3;
         Instantiate(player, new Vector3(0, -3, 10), transform.rotation);
-        
     }
 
+    private void Start()
+    {
+        GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+    }
 
     public void CreateBoss(int n, Transform trans)
     {
@@ -56,6 +62,35 @@ public class Stage1GameManager : MonoBehaviour
             bossScale = 1;
             bossBulletScale = 0.5f;
 
+        }
+
+        bossDieCheck++;
+
+        if (bossDieCheck == 15)
+        {
+            if (SceneManager.GetActiveScene().name == "boss1" && _UIManager.isBossClear[0] == false)
+            {
+                _UIManager.isBossClear[0] = true;
+                _UIManager.PassivePoint++;
+                PlayerPrefs.SetInt("Player_Passive_Point", _UIManager.PassivePoint);
+                PlayerPrefs.SetInt("Player_Boss_Clear_0", 1);
+            }
+
+            if (SceneManager.GetActiveScene().name == "boss2" && _UIManager.isBossClear[1] == false)
+            {
+                _UIManager.isBossClear[1] = true;
+                _UIManager.PassivePoint++;
+                PlayerPrefs.SetInt("Player_Passive_Point", _UIManager.PassivePoint);
+                PlayerPrefs.SetInt("Player_Boss_Clear_1", 1);
+            }
+
+            if (SceneManager.GetActiveScene().name == "boss3" && _UIManager.isBossClear[2] == false)
+            {
+                _UIManager.isBossClear[2] = true;
+                _UIManager.PassivePoint++;
+                PlayerPrefs.SetInt("Player_Passive_Point", _UIManager.PassivePoint);
+                PlayerPrefs.SetInt("Player_Boss_Clear_2", 1);
+            }
         }
     }
     public int GetHealth()

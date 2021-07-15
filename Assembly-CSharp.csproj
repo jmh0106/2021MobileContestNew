@@ -67,6 +67,7 @@
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LTSeq.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\BossTurn.cs" />
+    <Compile Include="Assets\Scripts\PetBullet.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\Scripts\Enemy\EyeBossSkill.cs" />
@@ -116,7 +117,6 @@
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\GeneralBasic.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\Unity Package\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\Scripts\PetBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity Package\TextMesh Pro\Shaders\TMPro.cginc" />

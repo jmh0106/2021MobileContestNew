@@ -12,9 +12,11 @@ public class Item : MonoBehaviour
     public GameObject bomb;
     public GameObject TimeSlow;
     public SoundManager soundManager;
+    public UIManager _UIManager;
    
     void Start()
     {
+        _UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         hitNum = 0;
         curX = (int)Mathf.Pow(-1, (int)Random.Range(1, 3));
@@ -92,9 +94,12 @@ public class Item : MonoBehaviour
             }
             else //bomb
             {
-                Instantiate(bomb, new Vector2(Random.Range(-8, 8), Random.Range(-4, 4)), transform.rotation);
-                soundManager.PlaySalvationItem();
-                Destroy(this.gameObject);
+                for (int i = 0; i < 1 + _UIManager.CoinShopLevel[1]; i++)
+                {
+                    Instantiate(bomb, new Vector2(Random.Range(-8, 8), Random.Range(-4, 4)), transform.rotation);
+                    soundManager.PlaySalvationItem();
+                    Destroy(this.gameObject);
+                }
             }
            
         }

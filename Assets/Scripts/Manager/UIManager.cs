@@ -38,6 +38,8 @@ public class UIManager : MonoBehaviour
     public GameObject[] EndingUI;
     public Sprite[] MonitorSprite; // Clear°¡ ¾ÕºÎºÐ
 
+    public bool[] isBossClear;
+
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -67,9 +69,16 @@ public class UIManager : MonoBehaviour
             if (!PlayerPrefs.HasKey("Player_Passive_Lock_" + i))
                 PlayerPrefs.SetInt("Player_Passive_Lock_" + i, 0);
             PassiveShopLock[i] = (PlayerPrefs.GetInt("Player_Passive_Lock_" + i) == 0) ? true : false;
-
-            PassiveShopLock[2] = false;
         }
+
+        for (int i = 0; i < 3; i++)
+        {
+            if (!PlayerPrefs.HasKey("Player_Boss_Clear_" + i))
+                PlayerPrefs.SetInt("Player_Boss_Clear_" + i, 0);
+            isBossClear[i] = (PlayerPrefs.GetInt("Player_Boss_Clear_" + i) == 0) ? false : true;
+        }
+
+        ResetPlayerPrefs();
     }
 
     private void ResetPlayerPrefs()
@@ -80,7 +89,8 @@ public class UIManager : MonoBehaviour
             PlayerPrefs.SetInt("Player_Skill_Level_" + i, 0);
         for (int i = 0; i < 3; i++)
             PlayerPrefs.SetInt("Player_Passive_Lock_" + i, 0);
-
+        for (int i = 0; i < 3; i++)
+            PlayerPrefs.SetInt("Player_Boss_Clear_" + i, 0);
     }
 
     // °ÔÀÓ ¸ØÃã
