@@ -10,6 +10,7 @@ public class Stage1GameManager : MonoBehaviour
     public GameObject stage1Boss;
     public GameObject player;
     public float bossBulletScale = 1;
+    private int bossDieCheck = 0;
 
     private void Awake()
     {
@@ -57,6 +58,12 @@ public class Stage1GameManager : MonoBehaviour
             bossBulletScale = 0.5f;
 
         }
+        bossDieCheck++;
+        if (bossDieCheck == 15)
+        {
+
+        }
+        
     }
     public int GetHealth()
     {
