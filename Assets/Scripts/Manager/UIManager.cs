@@ -313,6 +313,7 @@ public class UIManager : MonoBehaviour
         PlayerPrefs.SetInt("Player_Coin", Coin);
 
         GameUI[3].SetActive(false);
+        GameUI[5].SetActive(false);
 
         if (!isClear)
             LeanTween.moveY(EndingUI[1], 0, .2f);
@@ -343,12 +344,13 @@ public class UIManager : MonoBehaviour
         EndingUI[4].SetActive(false);
         EndingUI[5].SetActive(false);
         GameUI[3].SetActive(true);
+        GameUI[5].SetActive(true);
 
         EndingUI[0].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         EndingUI[2].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         EndingUI[1].transform.position = new Vector3(0, 14, 0);
         EndingUI[3].GetComponent<TextMeshProUGUI>().text = "";
-        Time.timeScale = 1f;
         GameUI[3].GetComponent<ScoreManager>().curScore = 0;
+        Time.timeScale = 1f;
     }
 }

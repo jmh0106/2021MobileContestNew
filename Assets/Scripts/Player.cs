@@ -63,7 +63,10 @@ public class Player : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > bulletCoolTime)
         {
-            Fire();
+            if (playerTripleBullet)
+                TripleFire();
+            else
+                Fire();
             timer = 0;
         }
 
@@ -138,13 +141,10 @@ public class Player : MonoBehaviour
 
     }
 
-    void Shield()
+    void TripleFire()
     {
-
-    }
-
-    void TripleShot()
-    {
-
+        Instantiate(bullet, transform.position, transform.rotation);
+        Instantiate(bullet, transform.position, transform.rotation).transform.Rotate(new Vector3(0, 0, 30));
+        Instantiate(bullet, transform.position, transform.rotation).transform.Rotate(new Vector3(0, 0, -30));
     }
 }
