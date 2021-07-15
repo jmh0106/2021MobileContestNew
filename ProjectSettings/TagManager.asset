@@ -28,7 +28,6 @@ TagManager:
   - JoyStick
   - RealBoss
   - BossSprite
-  - Step3_4
   layers:
   - Default
   - TransparentFX
