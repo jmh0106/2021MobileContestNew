@@ -47,7 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossBullet: {fileID: 2673491995182334235, guid: 4d400cdde9d99044bbb1c6091431ed3a, type: 3}
   gameMg: {fileID: 0}
-  ScoreManager: {fileID: 0}
   gameManager: {fileID: 0}
   soundManager: {fileID: 0}
 --- !u!58 &2336517119002349658

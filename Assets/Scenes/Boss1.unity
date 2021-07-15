@@ -471,7 +471,7 @@ MonoBehaviour:
   bossPhase: 1
   bossHealth: 0
   bossScale: 0
-  stage1Boss: {fileID: 0}
+  stage1Boss: {fileID: 1295645618524980227, guid: 2fd2b5635d73b984a9a8318ef840fb54, type: 3}
   player: {fileID: 5805794013240439132, guid: ae90e76ee54f6b14fadd2e6117a33b02, type: 3}
   bossBulletScale: 1
 --- !u!1001 &7855693337577805868

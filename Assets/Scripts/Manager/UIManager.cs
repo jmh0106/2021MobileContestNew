@@ -67,6 +67,8 @@ public class UIManager : MonoBehaviour
             if (!PlayerPrefs.HasKey("Player_Passive_Lock_" + i))
                 PlayerPrefs.SetInt("Player_Passive_Lock_" + i, 0);
             PassiveShopLock[i] = (PlayerPrefs.GetInt("Player_Passive_Lock_" + i) == 0) ? true : false;
+
+            PassiveShopLock[2] = false;
         }
     }
 
@@ -78,6 +80,7 @@ public class UIManager : MonoBehaviour
             PlayerPrefs.SetInt("Player_Skill_Level_" + i, 0);
         for (int i = 0; i < 3; i++)
             PlayerPrefs.SetInt("Player_Passive_Lock_" + i, 0);
+
     }
 
     // °ÔÀÓ ¸ØÃã
