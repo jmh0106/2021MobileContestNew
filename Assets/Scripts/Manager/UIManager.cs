@@ -237,7 +237,7 @@ public class UIManager : MonoBehaviour
             if (CoinShopLevel[i] != 5)
                 CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = ((CoinShopLevel[i] + 1) * 1000).ToString();
             else
-                CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = "Max Level";
+                CoinShopUI[i].gameObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = "Max";
         }
     }
 
