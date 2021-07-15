@@ -11967,7 +11967,7 @@ MonoBehaviour:
   - {fileID: 1454645036}
   - {fileID: 841964502}
   - {fileID: 204214229}
-  PassiveShopLock: 010101
+  PassiveShopLock: 000001
   PassiveShopUnlockSprite:
   - {fileID: 21300000, guid: 82597f452dc1d8d49bebdbc7fea6ef57, type: 3}
   - {fileID: 21300000, guid: 1c2fe8746a77ddc4cb15cda6cca071bc, type: 3}
