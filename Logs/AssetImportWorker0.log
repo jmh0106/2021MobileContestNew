@@ -15,11 +15,11 @@ C:/Users/JeongMinHo/Documents/2021MobileContestNew
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-13126
+13316
 Successfully changed project path to: C:/Users/JeongMinHo/Documents/2021MobileContestNew
 C:/Users/JeongMinHo/Documents/2021MobileContestNew
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,319 +35,123 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001412 seconds.
+Registered in 0.001453 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.408 seconds
+- Completed reload, in  1.453 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003237 seconds.
+Registered in 0.003641 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 38.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.987 seconds
+- Completed reload, in  1.038 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2159 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 99.9 MB.
 System memory in use after: 100.0 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2602.
-Total: 2.172000 ms (FindLiveObjects: 0.182300 ms CreateObjectMapping: 0.079200 ms MarkObjects: 1.852600 ms  DeleteObjects: 0.057200 ms)
+Total: 2.129800 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.066500 ms MarkObjects: 1.834200 ms  DeleteObjects: 0.057100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/UI/Stage
-  artifactKey: Guid(932c3730509379140a611ef818eb0b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage using Guid(932c3730509379140a611ef818eb0b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a912229a91bc35da8a37333cfc8334a4') in 0.007777 seconds
-  Import took 0.010668 seconds .
+  path: Assets/Scenes/Boss1.unity
+  artifactKey: Guid(884dad7c488ffe444827fe16c81f1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss1.unity using Guid(884dad7c488ffe444827fe16c81f1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b7947ae218279c7f459eb7e94046bd') in 0.015409 seconds
+  Import took 0.018517 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.615183 seconds.
-  path: Assets/Sprites/UI/Stage/Boss
-  artifactKey: Guid(3dac4e47aa4f6ff4fa90f5e1ea252d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss using Guid(3dac4e47aa4f6ff4fa90f5e1ea252d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f575442474a671c67bd5ac602fa66c4f') in 0.007767 seconds
-  Import took 0.011277 seconds .
+  Time since last request: 100.219775 seconds.
+  path: Assets/Scripts/Enemy/Enemy.cs
+  artifactKey: Guid(0cab1fcc04c8f2f4ba588f162c4f3375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Enemy.cs using Guid(0cab1fcc04c8f2f4ba588f162c4f3375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cecb8322b996fc282a1c51d3b7ac80') in 0.021719 seconds
+  Import took 0.024965 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.054775 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_back.png
-  artifactKey: Guid(69d6e0a34798f064989f0307f9b3558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_back.png using Guid(69d6e0a34798f064989f0307f9b3558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3ba1c94e0875194b264ea16699c0f2') in 0.101480 seconds
-  Import took 0.104976 seconds .
+  Time since last request: 0.010607 seconds.
+  path: Assets/Scripts/Enemy/Enemy.cs
+  artifactKey: Guid(0cab1fcc04c8f2f4ba588f162c4f3375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Enemy.cs using Guid(0cab1fcc04c8f2f4ba588f162c4f3375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cecb8322b996fc282a1c51d3b7ac80') in 0.002328 seconds
+  Import took 0.006235 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_normal.png
-  artifactKey: Guid(98fb32b1142e48245b389bc4323e294a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_normal.png using Guid(98fb32b1142e48245b389bc4323e294a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843ff69bb3b4d38acfc8e4e405d09e43') in 0.023738 seconds
-  Import took 0.026977 seconds .
+  Time since last request: 11.332007 seconds.
+  path: Assets/Scripts/Enemy/BossSkillDestroy.cs
+  artifactKey: Guid(7fb7eb9f271c0784e82f96ba412ecde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/BossSkillDestroy.cs using Guid(7fb7eb9f271c0784e82f96ba412ecde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a9eda7d0a1f509a2a195e0a5f458cf') in 0.007744 seconds
+  Import took 0.011949 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_easy.png
-  artifactKey: Guid(59b308cfe89ec3d4eaf195c4cf2d251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_easy.png using Guid(59b308cfe89ec3d4eaf195c4cf2d251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba6d287987f0ab48af32ff6e5bc7533') in 0.028799 seconds
-  Import took 0.032565 seconds .
+  Time since last request: 0.001083 seconds.
+  path: Assets/Scripts/Enemy/BossSkillDestroy.cs
+  artifactKey: Guid(7fb7eb9f271c0784e82f96ba412ecde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/BossSkillDestroy.cs using Guid(7fb7eb9f271c0784e82f96ba412ecde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a9eda7d0a1f509a2a195e0a5f458cf') in 0.002568 seconds
+  Import took 0.007060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_hard.png
-  artifactKey: Guid(b81b230df95c8234895c127092b233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_hard.png using Guid(b81b230df95c8234895c127092b233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cf7b5b1f98c0eb8443cb0a9938b905') in 0.021576 seconds
-  Import took 0.025110 seconds .
+  Time since last request: 1.571252 seconds.
+  path: Assets/Scripts/Enemy/ReverseSkill.cs
+  artifactKey: Guid(068cb310161eaaf4588ca0c4ca716b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/ReverseSkill.cs using Guid(068cb310161eaaf4588ca0c4ca716b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8672f53ec3c378805ef3fc8b2943f8e') in 0.006817 seconds
+  Import took 0.012513 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004159 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_hard.png
-  artifactKey: Guid(b81b230df95c8234895c127092b233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_hard.png using Guid(b81b230df95c8234895c127092b233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cf7b5b1f98c0eb8443cb0a9938b905') in 0.011627 seconds
-  Import took 0.016117 seconds .
+  Time since last request: 0.000636 seconds.
+  path: Assets/Scripts/Enemy/ReverseSkill.cs
+  artifactKey: Guid(068cb310161eaaf4588ca0c4ca716b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/ReverseSkill.cs using Guid(068cb310161eaaf4588ca0c4ca716b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8672f53ec3c378805ef3fc8b2943f8e') in 0.002379 seconds
+  Import took 0.006211 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 203.215612 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/boss_back.png
-  artifactKey: Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/boss_back.png using Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f2f15cb92ea6c6a9ab2e2034c23377') in 0.024138 seconds
-  Import took 0.027998 seconds .
+  Time since last request: 0.654883 seconds.
+  path: Assets/Scripts/Enemy/Stage1Boss.cs
+  artifactKey: Guid(e6257125c05ed3d4fb117755be9fe8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Stage1Boss.cs using Guid(e6257125c05ed3d4fb117755be9fe8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27db6bbdb98cbc486856f8215bab01e') in 0.006637 seconds
+  Import took 0.010571 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.202316 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info.png
-  artifactKey: Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info.png using Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965539a30c8a18bbbfa10360d62940aa') in 0.018052 seconds
-  Import took 0.021812 seconds .
+  Time since last request: 0.000801 seconds.
+  path: Assets/Scripts/Enemy/Stage1Boss.cs
+  artifactKey: Guid(e6257125c05ed3d4fb117755be9fe8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Stage1Boss.cs using Guid(e6257125c05ed3d4fb117755be9fe8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27db6bbdb98cbc486856f8215bab01e') in 0.002548 seconds
+  Import took 0.006040 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info_boss.png
-  artifactKey: Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info_boss.png using Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad06744f26d0df3ae35f60a0d6d6ec10') in 0.028838 seconds
-  Import took 0.032826 seconds .
+  Time since last request: 0.425824 seconds.
+  path: Assets/Scripts/Enemy/EyeBossSkill.cs
+  artifactKey: Guid(75125533cc8c0374a96e8b5dd0524dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/EyeBossSkill.cs using Guid(75125533cc8c0374a96e8b5dd0524dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f671485af3936fe435c639d7cd279d') in 0.009079 seconds
+  Import took 0.013292 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png
-  artifactKey: Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png using Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba0492e2be1275b7b7efc45f270ec13') in 0.018224 seconds
-  Import took 0.025987 seconds .
+  Time since last request: 0.000374 seconds.
+  path: Assets/Scripts/Enemy/EyeBossSkill.cs
+  artifactKey: Guid(75125533cc8c0374a96e8b5dd0524dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/EyeBossSkill.cs using Guid(75125533cc8c0374a96e8b5dd0524dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f671485af3936fe435c639d7cd279d') in 0.002806 seconds
+  Import took 0.006718 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png
-  artifactKey: Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png using Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b29bb9a9294c8b7616399ddf3318049') in 0.021439 seconds
-  Import took 0.029327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000762 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_hard 1.png
-  artifactKey: Guid(121721cc657f28140815aa2288708fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_hard 1.png using Guid(121721cc657f28140815aa2288708fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef603fe2aeac5e7b08e3b5597130561') in 0.028969 seconds
-  Import took 0.037454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.171844 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/boss_back.png
-  artifactKey: Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/boss_back.png using Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d21af5ec4259986847a1908c3c6e351') in 0.017425 seconds
-  Import took 0.021619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002913 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/boss_back.png
-  artifactKey: Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/boss_back.png using Guid(316a345227441084c91e8327e94be137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d21af5ec4259986847a1908c3c6e351') in 0.019209 seconds
-  Import took 0.023350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 103.672377 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info.png
-  artifactKey: Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info.png using Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c3271cd5163d8baf7155a698884640') in 0.019104 seconds
-  Import took 0.023060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info_boss.png
-  artifactKey: Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info_boss.png using Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb31deb90cbd1f17626664d5eeb47f6') in 0.025190 seconds
-  Import took 0.031449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000453 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png
-  artifactKey: Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png using Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa3f1696043069d3f496498bac7da36') in 0.020391 seconds
-  Import took 0.027440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001155 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info_boss.png
-  artifactKey: Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info_boss.png using Guid(8cdd9003ff1ddb14c9ec01c26c19b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb31deb90cbd1f17626664d5eeb47f6') in 0.017773 seconds
-  Import took 0.022300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png
-  artifactKey: Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_easy 1.png using Guid(b209524efe0514245b3e3d2611d4eab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa3f1696043069d3f496498bac7da36') in 0.024713 seconds
-  Import took 0.030421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/info.png
-  artifactKey: Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/info.png using Guid(725f0dfacb556764587215abc9d90692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c3271cd5163d8baf7155a698884640') in 0.013122 seconds
-  Import took 0.017043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png
-  artifactKey: Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png using Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec34a5864e586e6ad6b6a682dd8db9d') in 0.019386 seconds
-  Import took 0.024135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_hard 1.png
-  artifactKey: Guid(121721cc657f28140815aa2288708fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_hard 1.png using Guid(121721cc657f28140815aa2288708fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4f9ec58d1acd457a27ae8ce2cb4246') in 0.015021 seconds
-  Import took 0.018632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004036 seconds.
-  path: Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png
-  artifactKey: Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Stage/Boss/Map_boss_normal 1.png using Guid(98a4b794ba7828847ad78df0b51fbb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec34a5864e586e6ad6b6a682dd8db9d') in 0.014053 seconds
-  Import took 0.018179 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002982 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.899 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.8 MB.
-System memory in use after: 100.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2620.
-Total: 2.351600 ms (FindLiveObjects: 0.240500 ms CreateObjectMapping: 0.103800 ms MarkObjects: 1.988800 ms  DeleteObjects: 0.017500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003362 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.9 MB.
-System memory in use after: 101.0 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2624.
-Total: 2.092100 ms (FindLiveObjects: 0.175700 ms CreateObjectMapping: 0.075100 ms MarkObjects: 1.825200 ms  DeleteObjects: 0.015200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003245 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.928 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.9 MB.
-System memory in use after: 101.0 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2628.
-Total: 1.999300 ms (FindLiveObjects: 0.185200 ms CreateObjectMapping: 0.072200 ms MarkObjects: 1.728000 ms  DeleteObjects: 0.013200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003061 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.967 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.9 MB.
-System memory in use after: 101.0 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2632.
-Total: 2.113200 ms (FindLiveObjects: 0.177100 ms CreateObjectMapping: 0.065800 ms MarkObjects: 1.853200 ms  DeleteObjects: 0.016300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
